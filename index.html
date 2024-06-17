@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sinduja - Portfolio</title>
+    <title>Welcome</title>
+    <link rel="icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Sinduja Vengadesan</div>
+      <div class="logo">Sinduja</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -41,18 +42,15 @@
         <img src="./assets/about-pic.png" alt="Sinduja Vengadesan profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sinduja</h1>
-        <p class="section__text__p2">Data Analytics Engineer</p>
+        <p class="section__text__p1">Hey there, I'm </p>
+        <h3 class="title">Sinduja Vengadesan</h3>
+        <p>Data Engineer. Data Analyst. Book Lover. Sudoku. </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Let's Connect!
+            Resume
           </button>
         </div>
         <div id="socials-container">
@@ -71,227 +69,76 @@
         </div>
       </div>
     </section>
+    <!--ABOUT SECTION-->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Data Analytics Engineer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>M.S - Data Analytics Engineering<br />B.E - Computer Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Currently, a grad student at Northeastern University with over 2 years of experience in the data analytics/ engineering domain. 
-              My passion lies in designing and building systems to collect and analyze data to make business decisions.
-              Let's connect to talk more!
-            </p>
-          </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            Currently, a Data Analytics grad student at Northeastern University, Boston with over 2 years of experience in the data analytics/engineering domain. My passion lies in designing and building systems to collect and analyze data to make business decisions. Let's connect to talk more!
+          </p>
+        </div>
+        <div class="about-2-details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>M.S - Data Analytics Engineering, Northeastern University, Boston
+            <br />B.E - Computer Science, Anna University, Chennai
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
+      </div>
+     </section>
+    <!--SKILLS SECTION-->
+    <section id="skills">
+      <p class="section__text__p1">Skills I've been working on lately</p>
+      <div class="skills-container">
+        <div class="skills-list">
+          <h3>Programming</h3>
+          <p>Python (Numpy, Pandas, ScikitLearn, PySpark, Matplotlib, Seaborn) </br> SQL </br> Java</p>
+        </div>
+        <div class="skills-list">
+          <h3>Database Skills</h3>
+          <p>MySQL<br />IBM db2<br />PostgreSQL<br />MongoDB<br />Graph Databases</p>
+        </div>
+        <div class="skills-list">
+          <h3>Tools</h3>
+          <p>Tableau<br />Power BI<br />Google Analytics<br />Airflow<br />TalenD<br />Git<br />Github<br />Jira<br />Excel<br />MS Office</p>
+        </div>
+        <div class="skills-list">
+          <h3>Core Competencies</h3>
+          <p>Data Visualization<br/> Extract, Transform, Load (ETL) <br/>Data Modeling <br/>Data Warehousing<br />Data Pipelines
+          <br />Data Mining, Cleaning and Transformation<br />Predictive Models<br />Descriptive Models<br /> Exploratory Data Analysis <br/> Data Visualization</p>
+        </div>
+      </div>
+    </section>    
+    <!--EXPERIENCE SECTION-->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis and Engineering</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+      <div class="section-header">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+      <div class="experience-details-container">
+          <div class="experience-item">
+              <div class="details-container">
+                  <h2 class="experience-sub-title" style="text-align: left;">Data Engineer</h2>
+                  <h3 class="experience-sub-sub-title" style="text-align: left;">Tata Consultancy Services, Chennai, Tamil Nadu</h3>
+                  <p style="text-align: left;">Led the creation of a Data Warehouse to manage both historical and live data, implemented smooth ETL data pipelines using TalenD, and optimized batch processes with shell scripts. Utilizing SQL and T-SQL in IBM Db2, I developed intricate Stored Procedures, Triggers, and User Defined Functions for efficient data transformation. 
+                    Additionally, I produced 400+ Tableau BI reports, empowering data-driven decisions with advanced analytics</p>
+              </div>
+          </div>
+          <div class="experience-item">
+              <div class="details-container">
+                  <h2 class="experience-sub-title" style="text-align: left;">Database Management Intern</h2>
+                  <h3 class="experience-sub-sub-title" style="text-align: left;">Larson & Toubro - IDPL, Chennai, Tamil Nadu</h3>
+                  <p style="text-align: left;">Managed a MySQL Server RDBMS for vehicle spare parts inventory, implementing ETL data pipelines on TalenD to streamline data migration and boost business processes by 89% through automation. By enhancing the database with triggers, I optimized functionality and user experience, and collaborated with cross-functional teams to improve database operations and workflow efficiency
+                  </p>
+              </div>
+          </div>
+      </div>
+ </section>
+
+    <!--PROJECTS SECTION-->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -299,85 +146,82 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Descriptive Analysis</h2>
+            <h2 class="experience-sub-title project-title">Spatial Order of Popular Cities</h2>
+            <p><i>Clustering, Python (Pandas, Seaborn)</i></p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/UrbanSpatialOrder'">
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Exploratory Data Analysis</h2>
+            <h2 class="experience-sub-title project-title">Exploring Boston's City Score</h2>
+            <p><i>Python (Pandas, Matplotlib, Seaborn), Excel</i></p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/BostonCityScore'">
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">End-to-End Data Analysis and Visualization</h2>
+            <h2 class="experience-sub-title project-title">EV's in Washington: A Visualization</h2>
+            <p><i>Python (Pandas), Tableau, Excel</i></p>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/EVsinWashington'">
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Feature Extraction with Bar Crawl Data</h2>
+            <p><i>Time Series, Python (Pandas, Numpy, Seaborn)</i></p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/Bar-Crawl-Detecting-Heavy-Drinking'">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Mapping the Landscape of Gen-AI</h2>
+            <p>Text Analysis, Python (Pandas, nltk), KCN</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/Text-Analysis'">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">VitalSign: Database Modeling</h2>
+            <p>SQL (MySQL), MongoDB, Python (Pandas, Matplotlib)</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sindujavengadesan/Text-Analysis'">
+                Github
+              </button>
+            </div>
+          </div>
+    
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+   </section>
+    
+    <!--CONTACT SECTION-->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -388,7 +232,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">vengadesan.s@northeastern.edu / sindujav14@gmail.com</a></p>
+          <p><a href="mailto:vengadesan.s@northeastern.edu">vengadesan.s@northeastern.edu</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -396,7 +240,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/sindujavengadesan/">LinkedIn</a></p>
         </div>
       </div>
     </section>
