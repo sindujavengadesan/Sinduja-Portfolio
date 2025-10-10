@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinduja Vengadesan Technical Portfolio</title>
-    <!-- Load Tailwind CSS for modern, responsive styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Lucide Icons for aesthetic technical visuals -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         /* Custom Tailwind Configuration (Setting the dark theme and font) */
@@ -67,11 +65,9 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md shadow-lg border-b border-cyan-500/20">
         <nav class="section-content flex justify-between items-center py-4">
             <a href="#hero" class="text-2xl font-bold text-cyan-400 glow-shadow">Sinduja's Portfolio</a>
-            <!-- Desktop Nav -->
             <div class="hidden md:flex space-x-8 text-lg font-medium">
                 <a href="#about" class="nav-link transition duration-300 pb-1">About</a>
                 <a href="#skills" class="nav-link transition duration-300 pb-1">Skills</a>
@@ -79,12 +75,10 @@
                 <a href="#projects" class="nav-link transition duration-300 pb-1">Projects & Articles</a>
                 <a href="#contact" class="nav-link transition duration-300 pb-1">Contact</a>
             </div>
-            <!-- Mobile Menu Button (Hamburger Icon) -->
             <button id="menu-button" class="md:hidden p-2 rounded-lg hover:bg-slate-800 transition duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
             </button>
         </nav>
-        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-cyan-500/20">
             <a href="#about" onclick="toggleMenu()" class="block px-4 py-2 hover:bg-slate-700 transition duration-300">About</a>
             <a href="#skills" onclick="toggleMenu()" class="block px-4 py-2 hover:bg-slate-700 transition duration-300">Skills</a>
@@ -94,7 +88,6 @@
         </div>
     </header>
 
-    <!-- 1. Hero/Profile Section -->
     <section id="hero" class="min-h-[90vh] flex items-center justify-center text-center">
         <div class="px-4 py-16">
             <p class="text-xl font-medium text-slate-400 mb-2">Hello, I am...</p>
@@ -107,41 +100,50 @@
             <p class="max-w-3xl mx-auto text-slate-300 text-lg mb-8">
                 Currently a grad student at Northeastern University with over 3 years of experience in data engineering. Recently interned at AWS (Amazon Web Services), building AI agents and automated workflows. My interest lies in designing and building AI-powered systems to collect and analyze data to make business decisions
             </p>
-            <div class="flex justify-center space-x-4">
+            
+            <div class="flex justify-center space-x-4 flex-wrap">
                 <button 
-                    onclick="window.open('https://your-resume-url.pdf')"
-                    class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-cyan-500/50 transition duration-300 transform hover:scale-105"
+                    onclick="window.open('https://drive.google.com/file/d/1ZMBPc9riecblQhdJ3X7manSoxgfH1n1y/view?usp=sharing')" 
+                    class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-cyan-500/50 transition duration-300 transform hover:scale-105 mb-4 sm:mb-0"
                 >
                     View Full Resume
                 </button>
+                
+                <a 
+                    href="https://vengadesansinduja.medium.com" 
+                    target="_blank"
+                    class="border-2 border-cyan-600 text-cyan-400 hover:bg-cyan-600 hover:text-white font-bold py-3 px-8 rounded-xl transition duration-300 transform hover:scale-105 mb-4 sm:mb-0"
+                >
+                    Medium Articles
+                </a>
+
                 <a 
                     href="#contact"
-                    class="border-2 border-cyan-600 text-cyan-400 hover:bg-cyan-600 hover:text-white font-bold py-3 px-8 rounded-xl transition duration-300 transform hover:scale-105"
+                    class="border-2 border-slate-700 text-slate-400 hover:bg-slate-700 hover:text-white font-bold py-3 px-8 rounded-xl transition duration-300 transform hover:scale-105"
                 >
                     Get in Touch
                 </a>
             </div>
-            
             <div class="flex justify-center space-x-6 mt-8">
-                <!-- Social Icons using Lucide -->
                 <a href="https://www.linkedin.com/in/sindujavengadesan/" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300">
                     <i data-lucide="linkedin" class="w-6 h-6"></i>
                 </a>
                 <a href="https://github.com/sindujavengadesan" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300">
                     <i data-lucide="github" class="w-6 h-6"></i>
                 </a>
+                <a href="https://vengadesansinduja.medium.com" target="_blank" class="text-slate-400 hover:text-cyan-400 transition duration-300">
+                    <i data-lucide="zap" class="w-6 h-6"></i>
+                </a>
                 <a href="mailto:vengadesansinduja@gmail.com" class="text-slate-400 hover:text-cyan-400 transition duration-300">
                     <i data-lucide="mail" class="w-6 h-6"></i>
                 </a>
             </div>
         </div>
-        <!-- Scroll indicator -->
         <a href="#about" class="absolute bottom-10">
             <i data-lucide="chevrons-down" class="w-8 h-8 text-cyan-500 scroll-arrow"></i>
         </a>
     </section>
 
-    <!-- 2. About Me Section -->
     <section id="about" class="py-20 border-t border-b border-slate-700/50">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
@@ -149,7 +151,6 @@
             </h2>
             
             <div class="flex flex-col lg:flex-row gap-8">
-                <!-- Summary Card -->
                 <div class="lg:w-1/2 p-6 bg-slate-800 rounded-xl shadow-2xl border border-cyan-500/30 transition duration-500 hover:border-cyan-500">
                     <h3 class="text-2xl font-semibold mb-4 flex items-center text-cyan-400">
                         <i data-lucide="cpu" class="w-6 h-6 mr-2"></i> Engineering Focus
@@ -159,7 +160,6 @@
                     </p>
                 </div>
 
-                <!-- Education/Experience Snapshot -->
                 <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 transition duration-300 hover:shadow-cyan-500/30 hover:shadow-xl">
                         <i data-lucide="graduation-cap" class="w-8 h-8 text-cyan-400 mb-3"></i>
@@ -185,7 +185,6 @@
         </div>
     </section>
 
-    <!-- 3. Skills Section (The Data Architecture) -->
     <section id="skills" class="py-20">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
@@ -193,7 +192,6 @@
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Skill Group 1: Cloud & Big Data (Infrastructure) -->
                 <div class="p-6 bg-slate-800 rounded-xl border-t-4 border-cyan-500 shadow-2xl transition duration-300 hover:bg-slate-700/50">
                     <div class="flex items-center mb-4">
                         <i data-lucide="server-cog" class="w-6 h-6 text-cyan-400 mr-2"></i>
@@ -207,7 +205,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Group 2: AI & LLMs (Intelligence Layer) -->
                 <div class="p-6 bg-slate-800 rounded-xl border-t-4 border-cyan-500 shadow-2xl transition duration-300 hover:bg-slate-700/50">
                     <div class="flex items-center mb-4">
                         <i data-lucide="bot" class="w-6 h-6 text-cyan-400 mr-2"></i>
@@ -221,7 +218,6 @@
                     </ul>
                 </div>
 
-                <!-- Skill Group 3: Core Engineering & ETL (Processing) -->
                 <div class="p-6 bg-slate-800 rounded-xl border-t-4 border-cyan-500 shadow-2xl transition duration-300 hover:bg-slate-700/50">
                     <div class="flex items-center mb-4">
                         <i data-lucide="workflow" class="w-6 h-6 text-cyan-400 mr-2"></i>
@@ -235,7 +231,6 @@
                     </ul>
                 </div>
                 
-                <!-- Skill Group 4: Databases & Visualization (Storage & Output) -->
                 <div class="p-6 bg-slate-800 rounded-xl border-t-4 border-cyan-500 shadow-2xl transition duration-300 hover:bg-slate-700/50">
                     <div class="flex items-center mb-4">
                         <i data-lucide="database" class="w-6 h-6 text-cyan-400 mr-2"></i>
@@ -252,7 +247,6 @@
         </div>
     </section>
 
-    <!-- 4. Experience Section -->
     <section id="experience" class="py-20 border-t border-slate-700/50">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
@@ -260,7 +254,6 @@
             </h2>
 
             <div class="space-y-12">
-                <!-- Role 1: AWS -->
                 <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transition duration-300 hover:shadow-cyan-500/30">
                     <div class="flex justify-between items-start flex-wrap mb-4">
                         <div>
@@ -274,7 +267,6 @@
                     </ul>
                 </div>
 
-                <!-- Role 2: TCS -->
                 <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transition duration-300 hover:shadow-cyan-500/30">
                     <div class="flex justify-between items-start flex-wrap mb-4">
                         <div>
@@ -292,17 +284,14 @@
         </div>
     </section>
 
-    <!-- 5. Projects Section -->
     <section id="projects" class="py-20 border-b border-slate-700/50">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
                 Featured <span class="text-cyan-400">Projects</span>
             </h2>
 
-            <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project 1: Data Model for Postal Delivery System -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="package" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">Data Model for Postal Delivery</h3>
@@ -313,7 +302,6 @@
                     </a>
                 </div>
 
-                <!-- Project 2: Spatial Order of Popular Cities -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="map-pin" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">Spatial Order of Popular Cities</h3>
@@ -324,7 +312,6 @@
                     </a>
                 </div>
 
-                <!-- Project 3: EV's in Washington: A Visualization -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="trending-up" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">EV's in Washington: Visualization</h3>
@@ -347,17 +334,14 @@
         </div>
     </section>
 
-    <!-- 5. Medium Articles & Insights Section -->
     <section id="projects" class="py-20 border-b border-slate-700/50">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
                 Technical <span class="text-cyan-400">Insights & Articles</span>
             </h2>
 
-            <!-- Articles Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Article 1: Polars vs Pandas (User Provided) -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="cpu" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">Basics 101: Why Polars Beats Pandas for Big Data</h3>
@@ -368,7 +352,6 @@
                     </a>
                 </div>
 
-                <!-- Article 2: Context Engineering (User Provided) -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="brain" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">Context Engineering: Memory and Context Windows in AI</h3>
@@ -379,7 +362,6 @@
                     </a>
                 </div>
 
-                <!-- Article 3: Data Stack Architecture (Placeholder for a consistent third post) -->
                 <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 shadow-xl transition duration-300 hover:shadow-cyan-500/30 hover:border-cyan-500">
                     <i data-lucide="layers-3" class="w-8 h-8 text-cyan-400 mb-3"></i>
                     <h3 class="text-xl font-semibold mb-2 text-white">The Modern Data Stack: Data Lakehouse vs. Data Warehouse Evolution</h3>
@@ -403,7 +385,6 @@
     </section>
 
 
-    <!-- 6. Contact Section -->
     <section id="contact" class="py-20">
         <div class="section-content">
             <h2 class="text-4xl font-bold mb-12 text-center text-white">
@@ -412,38 +393,32 @@
 
             <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12">
                 
-                <!-- Email -->
                 <a href="mailto:vengadesansinduja@gmail.com" class="p-6 bg-slate-800 rounded-xl text-center flex flex-col items-center transition duration-300 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500">
                     <i data-lucide="mail" class="w-8 h-8 text-cyan-400 mb-2"></i>
                     <span class="text-lg font-medium text-white">Email</span>
-                    <span class="text-sm text-slate-400">vengadesansinduja@gmail.com</span>
+                    <span class="text-sm text-cyan-400 hover:underline">vengadesansinduja@gmail.com</span> 
                 </a>
 
-                <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/sindujavengadesan/" target="_blank" class="p-6 bg-slate-800 rounded-xl text-center flex flex-col items-center transition duration-300 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500">
                     <i data-lucide="linkedin" class="w-8 h-8 text-cyan-400 mb-2"></i>
                     <span class="text-lg font-medium text-white">LinkedIn</span>
-                    <span class="text-sm text-slate-400">in/sindujavengadesan</span>
+                    <span class="text-sm text-cyan-400 hover:underline">in/sindujavengadesan</span> 
                 </a>
 
-                <!-- GitHub -->
                 <a href="https://github.com/sindujavengadesan" target="_blank" class="p-6 bg-slate-800 rounded-xl text-center flex flex-col items-center transition duration-300 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500">
                     <i data-lucide="github" class="w-8 h-8 text-cyan-400 mb-2"></i>
                     <span class="text-lg font-medium text-white">GitHub</span>
-                    <span class="text-sm text-slate-400">sindujavengadesan</span>
+                    <span class="text-sm text-cyan-400 hover:underline">sindujavengadesan</span> 
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="py-6 border-t border-slate-700/50">
         <div class="section-content text-center text-sm text-slate-500">
             <p>&copy; 2024 Sinduja Vengadesan. Built with <span class="text-cyan-400">Data Flow</span> in mind.</p>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu and Lucide Icons -->
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
